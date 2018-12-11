@@ -33,14 +33,10 @@ char * strtok(char* str1, const char* str2){
   }
         count += 1;  // finally get total null
   
-   for(i=0; count!=0; i++){
-        str1 = str1+i;
-        tmp+i = str1+i;
-           
-        if(*str1=='\0'){
-            count--;
-            return tmp;
-        }
+   while(count!=0){
+        str1 += str1;
    }
+    
+   return str;
     
 }
