@@ -31,12 +31,17 @@ char * strtok(char* str1, const char* str2){
              count++;     // count null
       }
   }
-        count += 1;  // finally get total null
   
-   while(count!=0){
-        str1 += str1;
+      for(i=0; count!=0; i++){ // if count goes 0, terminate
+        str1 = str1+i;
+        tmp = str1+i;  // cuz it's the pointer.. don't need like this  :  tmp + i = str1+i
+           
+        if(*str1=='\0'){
+            count--;
+            return tmp;  
+        }
    }
     
-   return str;
-    
 }
+
+// this code has the error : segmentation fault (core dumped)
