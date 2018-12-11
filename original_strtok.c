@@ -19,10 +19,10 @@ yourself
 
 outline to implement the "strtok" function
 
-for문
-1. str에서 token이 나오기 전까지 첫번째 문자열을 저장하고 리턴
-2. 
-
-null이면서 뒤에 더이상 문자가 없을때 종료
+1. str에서 token을 찾아서 null로 만들기 - for문
+2. null을 카운트한다
+3. 카운트한 널갯수로 어떤게 진짜 최종 널인지 판단하기 - for문
+4. 널이 나올때마다 count를 --하고 return 해준다 -> ????? hmmmmm
+5. count가 1이될때 그게 바로 마지막 널이라고 판단하고 종료!
 
 */
