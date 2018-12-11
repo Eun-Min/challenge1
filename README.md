@@ -1,2 +1,2 @@
-# challenge1
+# strtok.c
 to implement the "strtok" function.
