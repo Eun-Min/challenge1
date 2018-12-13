@@ -39,12 +39,22 @@ char * strtok(char* str1, const char* str2){
      
           // caution : in the case of the pointer.. don't need like this  :  tmp + i = str1+i
            
-        if(*str1=='\0'){
+        if(*str1=='\0' && count==2){   // hello world winter   ->  two null except for end null
             count--;
             tmp = str1;    
             for(j=0; j!='\0'; j++){
                 printf("%s",*(tmp+j));
             }
+        }
+        else if(*str1=='\0' && count==1){
+                 count--;
+                 tmp = str1;      
+            for(j=0; j!='\0'; j++){
+                printf("%s",*(tmp+j));
+            } 
+        }
+        else{
+            break;    // totally end
         }
     }
     
