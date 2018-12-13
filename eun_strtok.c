@@ -41,13 +41,11 @@ char * strtok(char* str1, const char* str2){
            
         if(*str1=='\0'){
             count--;
-            str1 = str1;       //again
+            tmp = str1;       //again
             for(j=0; j!='\0'; j++){
-                printf("%s",str1+j);
+                printf("%s",tmp+j);
             }
         }
     }
     
 }
-
-// this code has the error : segmentation fault (core dumped)
