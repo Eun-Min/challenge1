@@ -41,9 +41,9 @@ char * strtok(char* str1, const char* str2){
            
         if(*str1=='\0'){
             count--;
-            tmp = str1;       //again
+            tmp = str1;    
             for(j=0; j!='\0'; j++){
-                printf("%s",tmp+j);
+                printf("%s",*(tmp+j));
             }
         }
     }
